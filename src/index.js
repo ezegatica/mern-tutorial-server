@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const app = require('./app');
+const app = require('./App');
 require('./database')
 
 async function main() {
