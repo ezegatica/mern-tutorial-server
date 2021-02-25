@@ -14,8 +14,9 @@ usersCtrl.createUser = async (req, res) => {
 }
 
 usersCtrl.deleteUser = async (req, res) => {
+    console.log('deleting ', req.params.id);
     const id = req.params.id
-    await User.findOneAndDelete (id)
+    await User.findByIdAndDelete (id)
     res.json({message: 'User eliminado!'})
 }
 
