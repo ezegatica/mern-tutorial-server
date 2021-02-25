@@ -5,7 +5,7 @@ require('./database')
 
 async function main() {
     await app.listen(app.get('port'));
-    console.log("server on!")
+    console.log("server conectado!")
 }
 
 
