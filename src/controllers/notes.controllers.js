@@ -27,7 +27,7 @@ notesCtrl.getNote = async (req, res) => {
 
 notesCtrl.deleteNote = async (req, res) => {
     const id = req.params.id
-    await Note.findOneAndDelete(id)
+    await Note.findByIdAndDelete(id)
     res.json({message: 'Nota eliminada!'});
 }
 
